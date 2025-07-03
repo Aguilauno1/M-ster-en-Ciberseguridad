@@ -1,7 +1,5 @@
 # Proyecto Flexbox - Oliver García
 
-Este proyecto es parte del módulo de Desarrollo Web de ThePower FP.
-
 ## 🧾 Descripción
 
 Landing page desarrollada usando **HTML y CSS**, aplicando **Flexbox** como principal herramienta de maquetación.  
