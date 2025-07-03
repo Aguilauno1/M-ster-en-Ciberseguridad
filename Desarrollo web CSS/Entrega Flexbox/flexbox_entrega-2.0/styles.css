@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  padding: 60px;
+  margin: 55px;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    to right,
+    rgba(183, 222, 237, 1),
+    rgba(33, 180, 226, 1) 23%,
+    rgba(113, 206, 239, 1) 56%,
+    rgba(183, 222, 237, 1)
+  );
+  border-radius: 10px;
+}
+
+header img {
+  margin-left: 8%;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+header nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.nav-list a {
+  color: white;
+  font-size: larger;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #90b4ce;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
+}
+
+.nav-list a:hover {
+  background-color: #3da9fc;
+  font-weight: 550;
+}
+
+/* Mobile Navigation */
+.index-index {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  header nav {
+    display: none;
+  }
+
+  .index-index {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    background-color: rgb(53, 129, 192);
+    max-width: max-content;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .index-index select {
+    background-color: white;
+    border-radius: 10px;
+  }
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  background-color: white;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px;
+  width: 30%;
+  background: linear-gradient(
+    to right,
+    rgba(4, 167, 217, 1),
+    rgba(33, 180, 226, 1) 37%,
+    rgba(113, 206, 239, 1) 56%,
+    rgba(183, 222, 237, 1)
+  );
+  border-radius: 60px 19px 120px 19px;
+}
+
+.hero div h1 {
+  font-size: xxx-large;
+  font-weight: 700;
+  color: #094067;
+  background-color: white;
+  padding-left: 20px;
+  border-top-left-radius: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.75);
+}
+
+.hero div p {
+  font-size: 19px;
+  color: #5f6c7b;
+  padding: 10px;
+  font-weight: 400;
+  background-color: white;
+  margin-block: 10px 30px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.75);
+}
+
+.img-hero {
+  width: 600px;
+  padding: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  background-color: #094067;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  padding: 13px;
+  width: 150px;
+  height: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  font-weight: 550;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.services h1 {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 30px;
+  color: #094067;
+}
+
+.services p {
+  display: flex;
+  justify-content: center;
+  padding: 0 25%;
+  color: #5f6c7b;
+  font-weight: 450;
+  text-align: center;
+}
+
+/* Cards Section */
+.fondo_tarjetas {
+  background-color: white;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 2cm 14cm;
+  background-color: white;
+}
+
+.cartas {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 10px 11px 20px rgba(0, 0, 0, 0.75);
+}
+
+.cartas img {
+  width: 120px;
+  height: auto;
+}
+
+.cartas p {
+  width: 300px;
+}
+
+.button-tarjetas {
+  display: flex;
+  justify-content: center;
+  margin: 1.3cm 8.5cm;
+}
+
+/* Footer Section */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  gap: 3cm;
+  padding: 100px 0 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(183, 222, 237, 1),
+    rgba(33, 180, 226, 1) 51%,
+    rgba(183, 222, 237, 1)
+  );
+}
+
+.footer .caja1,
+.footer .caja2,
+.footer .caja3,
+.footer .caja4 {
+  display: flex;
+  flex-direction: column;
+  gap: 1cm;
+  padding: 60px;
+}
+
+.footer h2 {
+  color: white;
+  font-weight: 500;
+}
+
+.footer p,
+.footer li {
+  color: white;
+  font-weight: 300;
+}
+
+.footer li {
+  list-style: none;
+}
